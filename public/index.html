@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Apna Chat</h1>
+    <div class="main">
+        <div class="name">
+            <span><i class="far fa-user"></i></span>
+            <input type="text" value="anonymous" maxlength="20" class="name-input" id="name-input">
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">
+                    kya kar raha hai bhai
+                    <span>ali 26may 10:10</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">
+                    Kuch nahi bhai padh raha hu
+                    <span>abid 26may 10:10</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">Killer is typing </p>
+            </li>
+        </ul>
+        <form class="message-form" id="message-form">
+            <input type="text" class="message-input" id="message-input">
+            <div class="v-divider"></div>
+            <button class="send-button" type="submit">send <span><i class="fas fa-paper-plane"></i></span></button>
+        </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">Total Clients :</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
